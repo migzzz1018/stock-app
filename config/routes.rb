@@ -7,7 +7,12 @@ Rails.application.routes.draw do
   get '/admin/trader/:id/edit', to: 'admin#edit_trader'
   put '/admin/trader_list', to: 'admin#update_trader'
 
-  root "posts#index"
+  #company 
+  get '/companies', to: 'traders#index'
+  get '/:company_symbol', to: 'traders#show'
+
+
+  root "traders#index"
   resources :traders
   devise_for :users
   resources :posts

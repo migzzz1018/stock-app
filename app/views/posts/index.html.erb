@@ -2,6 +2,19 @@
 
 <h1>Posts</h1>
 
+
+<div id="iex">
+
+<% @trials.each do |trial| %>
+  <%= trial.company_name %>
+  $<%= trial.latest_price %>
+  <%= link_to "Show This Company", trial.symbol %>
+  <br><br>
+<%end%>
+
+</div>
+
+
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>

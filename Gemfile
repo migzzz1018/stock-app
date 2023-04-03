@@ -29,6 +29,8 @@ gem "jbuilder"
 
 gem "dotenv-rails", require: "dotenv/rails-now"
 
+gem 'iex-ruby-client'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
